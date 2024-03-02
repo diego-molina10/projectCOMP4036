@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Programs</title>
+	<style>
+		input, button {
+			font-size: 18px;
+			margin: 5px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">JavaScript Programs</h1>
+
+	<h3>Simple Calculator</h3>
+	<input type="text" id="result" disabled>
+	<br>
+	<button onclick="clearDisplay()">C</button>
+	<button onclick="appendToDisplay('7')">7</button>
+	<button onclick="appendToDisplay('8')">8</button>
+	<button onclick="appendToDisplay('9')">9</button>
+	<button onclick="appendToDisplay('/')">/</button>
+	<br>
+	<button onclick="appendToDisplay('4')">4</button>
+	<button onclick="appendToDisplay('5')">5</button>
+	<button onclick="appendToDisplay('6')">6</button>
+	<button onclick="appendToDisplay('*')">*</button>
+	<br>
+	<button onclick="appendToDisplay('1')">1</button>
+	<button onclick="appendToDisplay('2')">2</button>
+	<button onclick="appendToDisplay('3')">3</button>
+	<button onclick="appendToDisplay('-')">-</button>
+	<br>
+	<button onclick="appendToDisplay('0')">0</button>
+	<button onclick="appendToDisplay('.')">.</button>
+	<button onclick="calculateResult()">=</button>
+	<button onclick="appendToDisplay('+')">+</button>
+
+	<script src="jsfiles/calculator.js"></script>
+	<br>
+	<br>
+
+	<button id="changeColorButton">Change Background Color</button>
+
+	<script src="jsfiles/backgroundChanger.js"></script>
+	<br>
+	<br>
+
+	<h1 id="userName"></h1>
+
+	<script src="jsfiles/username.js"></script>
+</body>
+</html>
